@@ -1,0 +1,51 @@
+.header {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  color: #5f6368;
+  font-family: Roboto,Arial,Helvetica,sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 10px 0px;
+}
+
+.header__logo-img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+
+  margin: 0px 20px 0px 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 1%;
+  height: 80px;
+}
+
+.navbar > li, a, button {
+  font: var(--sub-text);
+  text-decoration: none;
+  color: white;
+}
+
+.navbar > * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+
+
+
+

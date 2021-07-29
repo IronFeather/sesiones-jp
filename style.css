@@ -1,0 +1,31 @@
+@import "nav.css";
+@import "content.css";
+
+body {
+  margin: 0px;
+  padding-top: 80px;
+  font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
+}
+
+.btn {
+  height: 55px;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+  height: 48px;
+}
+
+.buttons-correo {
+  background-color: white;
+  color: #176282;
+  border: 2px solid #EAEAEA;
+}
+
+.buttons-llamar {
+  background-color: #176282;
+  width: 220px;
+}
