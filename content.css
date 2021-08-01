@@ -20,10 +20,6 @@ body {
   width: 30%;
 }
 
-.content__info__2 {
-  width: 40%;
-}
-
 .content__info-title {
   font-size: 42px;
   font-weight: 400;
@@ -49,15 +45,19 @@ body {
   margin: 10px 20px 10px 0px;
 }
 
+/* IMAGEN */
 .content__info__for_img {
   width: 60%;
+  background-color: blue;
 }
 
 .content__info-img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
+/* FIN IMAGEN */
 .btn {
   height: 55px;
   padding: 9px 25px;
@@ -81,73 +81,84 @@ body {
   width: 220px;
 }
 
+/* TABLET */
 @media only screen and (max-width: 1200px) {
-  body {
-    background-color: rgba(0,0,0,0.1);
-    padding-top: 0px;
-  }
 
-  .content {
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 100px 5% 0 5%;
-  }
-  .content :nth-child(1) { 
-    order: 2; 
-  }
-  .content :nth-child(2) { 
-    order: 1; 
-  }
+body {
+  background-color: rgba(0,0,0,0.1);
+  padding-top: 0px;
+}
 
-  .content__info {
-    width: auto;
-    padding: 25px 25px;
-    background-color: white;
-  }
+.content {
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 100px 5% 0px 5%;
+}
+.content :nth-child(1) { 
+  order: 2; 
+}
+.content :nth-child(2) { 
+  order: 1; 
+}
 
-  .content__info__for_img {
-    width: 100%;
-  }
+.content__info {
+  width: auto;
+  padding: 25px 25px;
+  background-color: white;
+}
 
-  .content__info-img {
-    content: url("/media/Foto_1_celular.png");
-  }
+.content__info__for_img {
+  width: 100%;
+}
 
-  .content__info__buttons {
-    display: flex;
-    flex-direction: row;
-  }
+.content__info-img {
+  content: url("/media/Foto_1_celular.png");
+  background-color: red;
+}
 
-  .content__info-button {
-    margin: 0px;
-  }
+.content__info__buttons {
+  display: flex;
+  flex-direction: row;
+}
 
-  
-  .content__info-title {
-    font-size: 22px;
-    font-weight: 400;
-    letter-spacing: -.5px;
-    line-height: 0;
-    margin: 10px 0px 25px 0px;
-  }
+.content__info-button {
+  margin: 0px;
+}
 
-  .content__info-p {
-    color: #5f6368;
-    font-family: Roboto, Arial,Helvetica,sans-serif;
-    font-size: 13px;
-    line-height: 1.7;
-    padding: 0px 0px;
-    text-align: justify;
-  }
 
-  .buttons-correo {
-    background-color: white;
-    color: #176282;
-    border: 2px solid #EAEAEA;
-  }
-  
-  .buttons-llamar {
-    background-color: #176282;
+.content__info-title {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -.5px;
+  line-height: 0;
+  margin: 10px 0px 25px 0px;
+}
+
+.content__info-p {
+  color: #5f6368;
+  font-family: Roboto, Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 0px 0px;
+  text-align: justify;
+}
+
+.buttons-correo {
+  background-color: white;
+  color: #176282;
+  border: 2px solid #EAEAEA;
+}
+
+.buttons-llamar {
+  background-color: #176282;
+  width: 100px;
+}
+
+/* CELULAR */
+@media only screen and (max-width: 600px) {
+
+  .header__buttons {
+    display: none;
   }
 }
