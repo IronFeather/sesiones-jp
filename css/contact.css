@@ -1,0 +1,37 @@
+.float{
+    content: url("/media/Logo_whatsapp.png");
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:40px;
+	right:40px;
+	text-align:center;
+
+    display: none;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+/* TABLET HORIZONTAL */
+@media only screen and (max-width: 1200px) {
+    .float {
+        display: none;
+    }
+}
+  
+/* TABLET VERTICAL */
+@media only screen and (max-width: 1000px) {
+    .float {
+        display: block;
+    }
+}
+  
+/* CELULAR */
+@media only screen and (max-width: 600px) {
+    .float {
+        bottom:20px;
+	    right:20px;
+    }
+}

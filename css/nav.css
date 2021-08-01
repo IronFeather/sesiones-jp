@@ -3,6 +3,7 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .header__logo {
@@ -31,6 +32,8 @@
   background-color: white;
   padding: 0px 1%;
   height: 80px;
+
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar > li, a, button {
