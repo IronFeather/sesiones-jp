@@ -1,3 +1,25 @@
+/* Button navbar desktop */
+.header__contact__button {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  
+    font-size: 16px;
+    font-weight: 500;
+
+    background-color: #1A638E;
+    height: 48px;
+    width: 220px;
+    padding: 9px 25px;
+    transition: 0.2s;
+}
+
+.header__contact__button:hover {
+    background-color: #f3fbff;
+    color: #1A638E; 
+    border: 1px solid #1A638E;
+}
+
 .float{
     content: url("/media/Logo_whatsapp.png");
 	position:fixed;
@@ -13,16 +35,13 @@
 
 /* TABLET HORIZONTAL */
 @media only screen and (max-width: 1200px) {
-    .float {
-        display: none;
-    }
+    .float { display: none; }
 }
   
 /* TABLET VERTICAL */
 @media only screen and (max-width: 1000px) {
-    .float {
-        display: block;
-    }
+    .header__contact { display: none; }
+    .float { display: block; }
 }
   
 /* CELULAR */

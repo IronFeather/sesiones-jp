@@ -4,20 +4,7 @@ body {
   font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
 }
 
-.link {
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: 1;
-}
-
-.header__buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
+/* Código base TARJETAS */
 .content {
   position: relative;
   display: flex;
@@ -29,7 +16,7 @@ body {
   width: 30%;
 }
 
-.content__info-title {
+.content__info__title {
   font-size: 42px;
   font-weight: 400;
   letter-spacing: -.5px;
@@ -37,12 +24,7 @@ body {
   margin: 10px 0px;
 }
 
-.content__info-title_content_2 {
-  font-size: 36px;
-  line-height: 50px;
-}
-
-.content__info-p {
+.content__info__paragraph {
   color: #5f6368;
   font-family: Roboto, Arial,Helvetica,sans-serif;
   font-size: 20px;
@@ -50,211 +32,108 @@ body {
   padding: 0px 0px;
 }
 
-.content__info__buttons {
-  display: flex;
-  flex-direction: column;
-}
-
-.content__info-button {
-  margin: 10px 20px 10px 0px;
-}
-
-.content_1_spacer {
-  width: 10%;
-}
-
-
-/* IMAGEN */
-.content__for_img {
+.content__picture {
   width: 60%;
 }
 
-
-.content-img {
+.content__picture__img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* FIN IMAGEN */
-.btn {
-  height: 55px;
-  padding: 9px 25px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-
-  font-size: 16px;
-  font-weight: 500;
-  height: 48px;
+/* EXTRAS */
+.content__link {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
 
-.buttons-correo {
-  background-color: white;
-  color: #176282;
-  border: 2px solid #EAEAEA;
-}
+/* CONTENT FIRST PICTURE */
+.content__spacer1 { width: 10%; }
 
-.buttons-llamar {
-  background-color: #1A638E;
-  width: 220px;
-  transition: 0.2s;
-}
+/* CONTENT PICTURE LEFT */
+.content__picture--PictureLeft { order: 1; width: 50%; }
+.content__spacer2 { order: 2; width: 10%; }
+.content__info--PictureLeft { order: 3; width: 35%; }
+.content__spacer3 { order: 4; width: 5%;}
 
-.buttons-llamar:hover {
-  background-color: #f3fbff;
-  color: #1A638E; 
-  border: 1px solid #1A638E;
-}
+/* CONTENT PICTURE RIGHT */
+.content__picture--PictureRight { order: 4; width: 50%; }
+.content__spacer4 { order: 1; width: 5%; }
+.content__info--PictureRight { order: 2; width: 35%; }
+.content__spacer5 { order: 3; width: 10%; }
 
-/* CONTENT_2 */
-.content__for_img_content_2 {
-  order: 1;
-  width: 50%;
-}
 
-.content_2_spacer_1 {
-  order: 2;
-  width: 10%;
-}
+/* -------------------------------RESPONSIVIDAD------------------------------ */
 
-.content__info__content-2 {
-  order: 3;
-  width: 35%;
-}
-
-.content_2_spacer_2 {
-  order: 4;
-  width: 5%;
-}
-
-/* CONTENT_3 */
-.content__for_img_content_3 {
-  order: 4;
-  width: 50%;
-}
-
-.content_3_spacer_1 {
-  order: 1;
-  width: 5%;
-}
-
-.content__info__content-3 {
-  order: 2;
-  width: 35%;
-}
-
-.content_3_spacer_2 {
-  order: 3;
-  width: 10%;
-}
-
-/* TABLET HORIZONTAL */
+/* ---------TABLET HORIZONTAL------------- */
 @media only screen and (max-width: 1200px) {
-  
-  .navbar {
-    padding-left: 15px;
+  .navbar { padding-left: 15px; }
+  .content { margin-top: 70px; }
+}
+
+/* ----------TABLET VERTICAL------------ */
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: rgba(0,0,0,0.1);
+    padding-top: 0px;
   }
 
   .content {
-    margin-top: 70px;
+    flex-direction: column;
+    overflow: hidden;
+    
+    border-radius: 10px;
+    margin: 0px 5% 40px 5%;
   }
 
-  .content__info-title_content_2 {
-    font-size: 28px;
-    line-height: 35px;
+  .content--marginTop {
+    margin-top: 120px;
+  }
+
+  .content :nth-child(1) { order: 2; }
+  .content :nth-child(2) { order: 1; }
+
+  .content__info {
+    background-color: white;
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .content__picture {
+    width: 100%;
+  }
+
+  .content__picture__img { content: url("/media/Foto_1_celular.png"); }
+  .content__picture__img--PictureLeft { content: url("/media/Foto_2_celular.png"); }
+  .content__picture__img--PictureRight { content: url("/media/Foto_3_celular.png"); }
+
+  .content__info__title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+    line-height: 30px;
+    margin: 0;
+    text-size-adjust: 100%;
+  }
+
+  .content__info__paragraph {
+    color: #5f6368;
+    font-family: Roboto, Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 0px 0px;
+    margin: 10px 0px;
+    text-size-adjust: 100%;
   }
 }
 
-/* TABLET VERTICAL */
-@media only screen and (max-width: 1000px) {
-body {
-  background-color: rgba(0,0,0,0.1);
-  padding-top: 0px;
-}
-
-.header__buttons {
-  display: none;
-}
-
-.content {
-  flex-direction: column;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 0px 5% 40px 5%;
-}
-
-.spacing {
-  margin-top: 120px;
-}
-
-.content :nth-child(1) { 
-  order: 2; 
-}
-.content :nth-child(2) { 
-  order: 1; 
-}
-
-.content-3 :nth-child(1) { 
-  order: 1; 
-}
-.content-3 :nth-child(2) { 
-  order: 2; 
-}
-
-
-.content__info {
-  box-sizing: border-box;
-  width: 100%;
-  
-  padding: 15px 20px 15px 20px;
-  background-color: white;
-}
-
-.content__for_img {
-  width: 100%;
-}
-
-.content-img {
-  content: url("/media/Foto_1_celular.png");
-}
-
-.content-img_content_2 {
-  content: url("/media/Foto_2_celular.png");
-}
-
-.content-img_content_3 {
-  content: url("/media/Foto_3_celular.png");
-}
-
-.content__info-title {
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: -.5px;
-  line-height: 30px;
-  margin: 0;
-  text-size-adjust: 100%;
-}
-
-
-.content__info-p {
-  color: #5f6368;
-  font-family: Roboto, Arial,Helvetica,sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  padding: 0px 0px;
-  margin: 10px 0px;
-  /* text-align: justify; */
-  text-size-adjust: 100%;
-}
-
-/* CELULAR */
+/* ---------------CELULAR-------------------- */
 @media only screen and (max-width: 600px) {
-  .spacing {
-    margin-top: 30px;
-  }
-
-  .header {
-    display: none;
-  }
+  .content--marginTop { margin-top: 30px; }
+  .header { display: none; }
 }
