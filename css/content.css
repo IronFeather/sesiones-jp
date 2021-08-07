@@ -126,10 +126,10 @@ body {
     width: 100%;
   }
 
-  .content__picture__img { content: url("/media/Foto_1_celular.png"); }
-  .content__picture__img--PictureLeft { content: url("/media/Foto_2_celular.png"); }
+  .content__picture__img { content: url("/media/Foto_1_celular.jpg"); }
+  .content__picture__img--PictureLeft { content: url("/media/Foto_2_celular.jpg"); }
   .content__picture__img--PictureRight { content: url("/media/Foto_3_celular.png"); }
-  .content__picture__img--Special{ content: url("/media/Foto_4_celular.png"); }
+  .content__picture__img--Special{ content: url("/media/Foto_4_celular.jpg"); }
 
   .content__info__title {
     font-size: 22px;
