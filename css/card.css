@@ -1,0 +1,71 @@
+/* -----------Sección cartas------------- */
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 1105px; /* 365*3 = 1095 */
+}
+
+/* card */
+.card .container {
+    visibility: visible;
+    position: absolute;
+    top: -40px;
+    transition: 0s;
+    opacity: 0;
+}
+
+.card:hover .container {
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 1000ms;
+}
+
+.card {
+    background-size: cover!important;
+    background-position: center!important;
+    display: inline-block;
+    width: 365px;
+    height: 225px;
+    transition: transform 100ms ease-out, border-radius 200ms ease-out;
+    margin-bottom: 8px;
+}
+  
+.card:hover {
+    background: url(/media/video.mp4), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
+    border-radius: 10px 10px 0 0;
+    transform: scale(1.2);
+    transition-delay:1000ms;
+    box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
+}
+
+.card:hover video {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover p {
+    display: block;
+    background: #191919;
+    box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
+    color: #fff;
+    width: auto;
+    height: fit-content;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+} 
+
+
+/* card one */
+.card.one { background: url(/media/CD_01_c13.jpg), skyblue; }
+.card.two { background: url(/media/CD_02_teleton.jpg), skyblue; }
+.card.three { background: url(/media/CD_03_americo.jpg), skyblue; }
+.card.four { background: url(/media/CD_04_magoLipe.jpg), skyblue; }
+.card.five { background: url(/media/CD_05_nona.jpg), skyblue; }
+.card.six { background: url(/media/CD_06_em.jpg), skyblue; }
+
+

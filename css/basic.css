@@ -4,7 +4,15 @@
     padding: 0px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+html, body {
+    height: 100%;
+    color: white;
+    background-color: #191919;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Para poder trabajar con img dentro de figure */
+figure img, video {
+    vertical-align: top;
 }

@@ -1,0 +1,142 @@
+h2, h3 {
+    text-shadow: 4px 4px 7px #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+}
+
+.white {
+    background-color: white;
+}
+
+.section-divider {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg1 {
+    background: url("/media/bg1.jpg") no-repeat center;
+    background-attachment: fixed;
+}
+
+/* ------------ Primera sección --------------------- */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 18%;
+}
+
+/* Video espontaneo */
+.spontaneus-video {
+    margin: 0 15%;
+    box-shadow: 4px 4px 9px 0px rgba(0,0,0,0.7);
+}
+
+
+video{
+    width: 800px; 
+}
+
+/* Artículo */
+article h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+/* Icono con frase */
+.idea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Hace que el icono no se vea por encima */
+.idea figure {
+    z-index: -999;
+}
+
+.idea figure img {
+    width: 110px;
+    margin-right: 20px;
+}
+
+.idea p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #E4E4E4;
+}
+
+/* Botón */
+.button-contact {
+	background-color:#3165FF;
+	border-radius: 30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:bold;
+	text-decoration:none;
+    padding:20px 60px;
+    margin: 30px 0;
+}
+.button-contact:hover {
+	background-color:#0040ff;
+}
+.button-contact:active {
+	position:relative;
+	top:1px;
+}
+
+/* Sección fondo blanco */
+
+.my-clients h2 {
+    color: black;
+    text-shadow: 3px 3px 5px #7a7a7a;
+}
+
+/* -------------------Sección comentario----------------------- */
+.phrase {
+    color: #E4E4E4;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.phrase-paragraph {
+    margin-bottom: 50px;
+}
+
+/* --------------------Sección contacto------------------------- */
+.contact-wrapper {
+    background-color: white;
+    color: black;
+    padding: 120px 0px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact figure {
+    width: 400px;
+}
+
+.contact-content {
+    padding: 30px;
+}
+
+.contact-content p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact figure img{
+    width: 100%;
+}

@@ -1,16 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/style.css">
 
-    <title>Music producer</title>
-  </head>
-  <body>
-    <img src="/media/bg.png" alt="">
-  </body>
+		<!-- Estas 2 lineas llaman a main.js y ejecuta una jquery para el blur -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+		<title>Music producer</title>
+	</head>
+	<body>
+		<!-- Por ahora estará sin HEADER, por eso la no existencia de un H1 -->
+		
+		<!-- Prueba video! -->
+		
+
+		<!-- El main contendrá todo los artículos de la página, excluye el Header, el footer y cualquier tipo de formulario -->
+		<main>
+ 
+			<!-- Contendrá el primer BG junto con el título H2 -->
+			<div class="section-divider bg1">
+				<h2 class="title">Music Producer</h2>
+			</div>
+
+			<!-- Artículo fondo GRIS con video espontaneo -->
+			<div class="wrapper">
+				<figure class="spontaneus-video video-container">
+					<video src="" data-src="/media/video1.mp4" controls></video>
+				</figure>
+
+				
+
+				<article>
+					<!-- Título del artíclo -->
+					<h2>My Creative Designs</h2>
+
+					<!-- Grid de imágenes o videos -->
+					<div class="cards-wrapper">
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video1.mp4" loop></video>
+								<p>Canción creada y producida para Teleserie “Amor a la catalán”, que identifica al personaje Diego Catalán.</p>
+							</div>
+						</div>
+						<div class="card two">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video2.mp4" loop></video>
+								<p>Producción orquestal realizada con instrumentos virtuales para introducción del programa en el año 2020.</p>
+							</div>
+						</div>
+						<div class="card three">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video1.mp4" loop></video>
+								<p>Arreglo para quinteto de cuerdas producido con VST de Orchestral tools, para un concierto en Vivo de Domingo Vega.</p>
+							</div>
+						</div>
+						<div class="card four">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video2.mp4" loop></video>
+								<p>Composición orquestal ajustada a los movimientos y dinámicas de la magia de la Moneda, de MagoLipe.</p>
+							</div>
+						</div>
+						<div class="card five">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video1.mp4" loop></video>
+								<p>Composición musical de videojuego, construida y ajustada al tempo, dificultad de niveles y estética visual.</p>
+							</div>
+						</div>
+						<div class="card six">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video2.mp4" loop></video>
+								<p>Composición orquestal de escena “Cómo entrenar a tu dragón”,  ajustado  temporalmente al desarrollo de  la película.</p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Logo con comentario -->
+					<div class="idea">
+						<figure>
+							<img data-src="/media/icon1.svg" alt="">
+						</figure>
+						<p>Asesoría creativa y técnica a tus proyectos.</p>
+					</div>
+					<div class="idea">
+						<figure>
+							<img data-src="/media/icon2.svg" alt="">
+						</figure>
+						<p>Te ayudo con una perspectiva para que saquemos lo mejor de ti.</p>
+					</div>
+					<div class="idea">
+						<figure>
+							<img data-src="/media/icon3.svg" alt="">
+						</figure>
+						<p>Cuéntame la idea y yo me encargo del resto.</p>
+					</div>
+					
+					<!-- Botón contacto -->
+					<div class="wrapper">
+						<a href="https://api.whatsapp.com/send?phone=56990806170&text=Hola%20Juan%20Pablo,%20cuéntame%20más%20acerca%20de%20esto!" target="_blank" class="button-contact">CONTÁCTAME</a>
+					</div>
+		
+				</article>
+			</div>
+			
+			<!-- Artículo fondo blanco -->
+			<div class="wrapper white">
+				<article class="my-clients">
+					<!-- Título del artíclo -->
+					<h2>My Clients</h2>
+
+					<!-- Grid de imágenes o videos -->
+					<div class="cards-wrapper">
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video1.mp4" loop></video>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolore iusto illum, quia natus quas vel doloribus commodi veritatis tempore hic, distinctio excepturi eum voluptate animi vero corporis facilis alias?</p>
+							</div>
+						</div>
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video2.mp4" loop></video>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolore iusto illum, quia natus quas vel doloribus commodi veritatis tempore hic, distinctio excepturi eum voluptate animi vero corporis facilis alias?</p>
+							</div>
+						</div>
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video1.mp4" loop></video>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolore iusto illum, quia natus quas vel doloribus commodi veritatis tempore hic, distinctio excepturi eum voluptate animi vero corporis facilis alias?</p>
+							</div>
+						</div>
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video2.mp4" loop></video>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolore iusto illum, quia natus quas vel doloribus commodi veritatis tempore hic, distinctio excepturi eum voluptate animi vero corporis facilis alias?</p>
+							</div>
+						</div>
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video1.mp4" loop></video>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolore iusto illum, quia natus quas vel doloribus commodi veritatis tempore hic, distinctio excepturi eum voluptate animi vero corporis facilis alias?</p>
+							</div>
+						</div>
+						<div class="card one">
+							<div class="container">
+								<video src="/media/contacto.jpg" data-src="/media/video2.mp4" loop></video>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolore iusto illum, quia natus quas vel doloribus commodi veritatis tempore hic, distinctio excepturi eum voluptate animi vero corporis facilis alias?</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<!-- Frase JP -->
+			<div class="wrapper">
+				<article class="phrase">
+					<p class="phrase-paragraph">"Si me permites ser parte de tu proyecto, puedo aportar de diferentes maneras para sacarle el máximo potencial a tu creatividad"</p>
+					<p class="phrase-signature">Juan Pablo Grimminck</p>
+				</article>
+			</div>
+
+		</main>
+
+		<!-- Sección de contacto -->
+		<div class="wrapper contact-wrapper">
+			<section class="contact">
+				<figure>
+					<img src="/media/loading.jpg" data-src="/media/contacto.jpg" alt="">
+				</figure>
+				<div class="contact-content">
+					<p>Si tienes dudas hablemos, yo te respondo.</p>
+					<a href="https://api.whatsapp.com/send?phone=56990806170&text=Hola%20Juan%20Pablo,%20cuéntame%20más%20acerca%20de%20esto!" target="_blank" class="button-contact">CONTÁCTAME</a>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer con iconos a redes sociales y mail -->
+		<footer>
+			<div class="footer-wrapper">
+				<div class="footer-principal">
+					<div class="footer-redesSociales">
+						<h2>REDES SOCIALES</h2>
+						<a href="https://www.instagram.com/jp_grimminck/" target="_blank">Instagram</a>
+						<a href="https://www.youtube.com/channel/UC8ZPBWDHtUXh-kcrqbzJyRA" target="_blank">Youtube</a>
+						<a href="https://www.linkedin.com/in/jp-grimminck/" target="_blank">LinkedIn</a>
+					</div>
+					<div class="footer-contacto">
+						<h2>CONTACTO</h2>
+						<p>+569 90816170</p>
+						<p>grimminck@gmail.com</p>
+					</div>
+					<div class="footer-info">
+						<h2>INFO</h2>
+						<p>2022<p>
+						<p>Chile, Santiago</p>
+					</div>
+				</div>
+				<div class="footer-developer">
+					<h2>DESARROLLADOR WEB</h2>
+					<p>Alejandro Grimminck, Ingeniero en computación en Informática</p>
+				</div>
+				
+
+			</div>
+		</footer>
+
+		<!-- Scripts de JS -->
+		<script type="text/javascript" src="/main.js"></script>
+	</body>
 </html>
