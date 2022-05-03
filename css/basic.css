@@ -16,3 +16,9 @@ html, body {
 figure img, video {
     vertical-align: top;
 }
+
+@media (max-width: 1000px) {
+    body {
+        display: none;
+    }
+}
