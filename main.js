@@ -1,3 +1,10 @@
+// Click on loaad
+$("document").ready(function() {
+    console.log("hola");
+    console.log($("button"));
+	$("button").trigger('click');
+});
+
 // Blur on scroll
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -5,9 +12,6 @@ $(window).scroll(function(){
         filter: "blur(" + (scroll/70) + "px)"
     })
 })
-
-// Autoplay de video en la primera carga!
-// document.querySelector('video').setAttribute("autoplay", "true");
 
 
 // Pausar video cuando no se vea en la pantalla
@@ -44,7 +48,6 @@ let out = true;
 for(let i = 0; i<autoplay.length; i++){
     autoplay[i].addEventListener('mouseenter', 
     function(e){
-        console.log($(autoplay[i]).css('opacity'));
         setTimeout(function() {
             if ($(autoplay[i]).css('opacity') == 1){
                 autoplay[i].firstElementChild.play();
