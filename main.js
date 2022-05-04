@@ -6,7 +6,6 @@ $(window).scroll(function(){
     })
 })
 
-
 // Pausar video cuando no se vea en la pantalla
 let video = document.querySelector('video');
 let isPaused = false; /* flag for auto-pausing of the video */
@@ -17,7 +16,6 @@ let observer = new IntersectionObserver((entries, observer) => {
         // Hace que el video se ponga automáticamente en play la primera vez que se carga la página
         if(entry.intersectionRatio==1 && firstTime){
             video.play();
-            video.muted = false; 
             firstTime = false;
         }
 
@@ -45,7 +43,6 @@ for(let i = 0; i<autoplay.length; i++){
         setTimeout(function() {
             if ($(autoplay[i]).css('opacity') == 1){
                 autoplay[i].firstElementChild.play();
-                autoplay[i].firstElementChild.muted = false;
             }
         }, 1100);
     })
