@@ -16,8 +16,8 @@ let observer = new IntersectionObserver((entries, observer) => {
 
         // Hace que el video se ponga automáticamente en play la primera vez que se carga la página
         if(entry.intersectionRatio==1 && firstTime){
-            video.muted = false; 
             video.play();
+            video.muted = false; 
             firstTime = false;
         }
 
@@ -44,8 +44,8 @@ for(let i = 0; i<autoplay.length; i++){
     function(e){
         setTimeout(function() {
             if ($(autoplay[i]).css('opacity') == 1){
-                autoplay[i].firstElementChild.muted = false;
                 autoplay[i].firstElementChild.play();
+                autoplay[i].firstElementChild.muted = false;
             }
         }, 1100);
     })
