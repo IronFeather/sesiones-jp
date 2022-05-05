@@ -16,8 +16,11 @@ h2, h3 {
 }
 
 .bg1 {
-    background: url("/media/bg1.jpg") no-repeat center;
-    background-attachment: fixed;
+    background: url("/media/bg1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* ------------ Primera sección --------------------- */
