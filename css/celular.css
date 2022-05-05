@@ -1,0 +1,17 @@
+/* CELULAR */
+@media (max-width: 1000px) {
+    main, footer, div, img, .wrapper, .contact-wrapper {
+        display: none;
+    }
+
+    .celular {
+        width: auto;
+        height: 100vh;
+        display: block;
+        background-image: url(/media/bg1.jpg);
+    }
+}
+
+
+
+

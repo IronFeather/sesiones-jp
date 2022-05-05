@@ -44,7 +44,7 @@ for(let i = 0; i<autoplay.length; i++){
             if ($(autoplay[i]).css('opacity') == 1){
                 autoplay[i].firstElementChild.play();
             }
-        }, 1100);
+        }, 600);
     })
     autoplay[i].addEventListener('mouseleave', 
     function(e){

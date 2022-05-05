@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 50px;
-    width: 1105px; /* 365*3 = 1095 */
+    width: 100%;
 }
 
 /* card */
@@ -21,24 +21,24 @@
     cursor: pointer;
     visibility: visible;
     opacity: 1;
-    transition-delay: 1000ms;
+    transition-delay: 500ms;
 }
 
 .card {
     background-size: cover!important;
     background-position: center!important;
     display: inline-block;
-    width: 365px;
-    height: 225px;
-    transition: transform 100ms ease-out, border-radius 200ms ease-out;
-    margin-bottom: 8px;
+    min-width: 33%;
+    height: 13vw;
+    transition: transform 200ms ease-out, border-radius 200ms ease-out;
+    margin-bottom: 6px;
 }
   
 .card:hover {
-    background: url(/media/video.mp4), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
+    background: url(/media/video1.mp4), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
     border-radius: 10px 10px 0 0;
-    transform: scale(1.2);
-    transition-delay:1000ms;
+    transform: scale(1.4);
+    transition-delay:500ms;
     box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
 }
 
@@ -47,7 +47,15 @@
     border-radius: 10px 10px 0 0;
 }
 
+/* MIENTRAAS */
+.card:hover img {
+    width: 100%;
+    
+    border-radius: 10px 10px 0 0;
+}
+
 .card:hover p {
+    position: relative;
     display: block;
     background: #191919;
     box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
@@ -57,6 +65,8 @@
     padding: 15px;
     box-sizing: border-box;
     border-radius: 0 0 10px 10px;
+    top: -5px;
+    font-size: 1vw;
 } 
 
 
