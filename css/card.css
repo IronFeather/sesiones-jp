@@ -32,11 +32,12 @@
     height: 13vw;
     transition: transform 200ms ease-out, border-radius 200ms ease-out;
     margin-bottom: 6px;
+    border-radius: 3px;
 }
   
 .card:hover {
     background: url(/media/video1.mp4), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
     transform: scale(1.4);
     transition-delay:500ms;
     box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
@@ -44,14 +45,14 @@
 
 .card:hover video {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 
 /* MIENTRAAS */
 .card:hover img {
     width: 100%;
     
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
 }
 
 .card:hover p {

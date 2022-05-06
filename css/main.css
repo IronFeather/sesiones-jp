@@ -39,6 +39,7 @@ h2, h3 {
 
 video{
     width: 100%; 
+    border-radius: 3px;
 }
 
 /* Artículo */
@@ -132,6 +133,7 @@ article h2 {
 
 .contact figure {
     width: 22vw;
+    
 }
 
 .contact-content {
@@ -145,4 +147,5 @@ article h2 {
 
 .contact figure img{
     width: 100%;
+    border-radius: 3px;
 }
