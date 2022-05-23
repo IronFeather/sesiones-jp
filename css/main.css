@@ -23,6 +23,22 @@ h2, h3 {
     background-size: cover;
 }
 
+.bg2 {
+    background: url("/media/MusicTranscription/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg3 {
+    background: url("/media/SessionMusician/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /* ------------ Primera sección --------------------- */
 .wrapper {
     display: flex;

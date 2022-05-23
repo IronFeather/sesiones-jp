@@ -71,12 +71,25 @@
 } 
 
 
-/* card one */
-.card.one { background: url(/media/CD_01_c13.jpg), skyblue; }
-.card.two { background: url(/media/CD_02_teleton.jpg), skyblue; }
-.card.three { background: url(/media/CD_03_americo.jpg), skyblue; }
-.card.four { background: url(/media/CD_04_magoLipe.jpg), skyblue; }
-.card.five { background: url(/media/CD_05_nona.jpg), skyblue; }
-.card.six { background: url(/media/CD_06_em.jpg), skyblue; }
+/* Section one */
+.creative-designs .card.one { background: url(/media/CD_01_c13.jpg), skyblue; }
+.creative-designs .card.two { background: url(/media/CD_02_teleton.jpg), skyblue; }
+.creative-designs .card.three { background: url(/media/CD_03_americo.jpg), skyblue; }
+.creative-designs .card.four { background: url(/media/CD_04_magoLipe.jpg), skyblue; }
+.creative-designs .card.five { background: url(/media/CD_05_nona.jpg), skyblue; }
+.creative-designs .card.six { background: url(/media/CD_06_em.jpg), skyblue; }
 
+
+/* Section two */
+.music-transcription .card.one { background: url(/media/MusicTranscription/01_thevoice.jpg), skyblue; }
+.music-transcription .card.two { background: url(/media/MusicTranscription/02_bigband.jpg), skyblue; }
+.music-transcription .card.three { background: url(/media/MusicTranscription/03_LuisJara.jpg), skyblue; }
+
+/* Section three */
+.session-musician .card.one { background: url(/media/SessionMusician/01.jpg), skyblue; }
+.session-musician .card.two { background: url(/media/SessionMusician/02.jpg), skyblue; }
+.session-musician .card.three { background: url(/media/SessionMusician/03.jpg), skyblue; }
+.session-musician .card.four { background: url(/media/SessionMusician/04.jpg), skyblue; }
+.session-musician .card.five { background: url(/media/SessionMusician/05.jpg), skyblue; }
+.session-musician .card.six { background: url(/media/SessionMusician/06.jpg), skyblue; }
 
