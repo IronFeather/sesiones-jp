@@ -8,88 +8,76 @@
     width: 100%;
 }
 
-/* card */
-.card .container {
-    visibility: visible;
-    position: absolute;
-    top: -40px;
-    transition: 0s;
-    opacity: 0;
-}
-
-.card:hover .container {
-    cursor: pointer;
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 500ms;
-}
-
 .card {
-    background-size: cover!important;
-    background-position: center!important;
-    display: inline-block;
-    min-width: 33%;
-    height: 13vw;
-    transition: transform 200ms ease-out, border-radius 200ms ease-out;
-    margin-bottom: 6px;
-    border-radius: 3px;
+    position: relative;
+    width: 33%;
+    margin-bottom: 0.35vw;
+    transition: transform 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
 }
-  
+
 .card:hover {
-    background: url(/media/video1.mp4), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
-    border-radius: 6px 6px 0 0;
-    transform: scale(1.4);
-    transition-delay:500ms;
-    box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
-.card:hover video {
-    width: 100%;
-    border-radius: 6px 6px 0 0;
+.onTop {
+    z-index: 10;
 }
 
-/* MIENTRAAS */
-.card:hover img {
-    width: 100%;
-    
-    border-radius: 6px 6px 0 0;
+/* Clase activada por JS */
+.transition:hover {
+    position: relative;
+    transform: scale(1.3);
+    transition: transform 0.3s;
+
 }
 
-.card:hover p {
+.transition:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear 0.7s;
+}
+
+.maintain-img:hover img {
+    opacity: 1;
+}
+
+.transition:hover p {
+    opacity: 1;
+    transition: opacity 0.3s;
+    box-shadow: 0px 2px 9px -4px #000000;    
+}
+
+.card img {
     position: relative;
     display: block;
-    background: #191919;
-    box-shadow: 0px 5px 14px 1px rgba(0,0,0,0.5);
-    color: #fff;
-    width: auto;
-    height: fit-content;
+    z-index: 1;
+    width: 100%;
+    
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card video {
+    position: absolute;
+    display: block;
+    z-index: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    position:absolute;
+    top: 0px;
     padding: 15px;
-    box-sizing: border-box;
-    border-radius: 0 0 6px 6px;
-    top: -5px;
-    font-size: 1vw;
-} 
 
+    border-radius: 0 0 5px 5px;
+    background-color: #191919;
 
-/* Section one */
-.creative-designs .card.one { background: url(/media/CD_01_c13.jpg), skyblue; }
-.creative-designs .card.two { background: url(/media/CD_02_teleton.jpg), skyblue; }
-.creative-designs .card.three { background: url(/media/CD_03_americo.jpg), skyblue; }
-.creative-designs .card.four { background: url(/media/CD_04_magoLipe.jpg), skyblue; }
-.creative-designs .card.five { background: url(/media/CD_05_nona.jpg), skyblue; }
-.creative-designs .card.six { background: url(/media/CD_06_em.jpg), skyblue; }
-
-
-/* Section two */
-.music-transcription .card.one { background: url(/media/MusicTranscription/01_thevoice.jpg), skyblue; }
-.music-transcription .card.two { background: url(/media/MusicTranscription/02_bigband.jpg), skyblue; }
-.music-transcription .card.three { background: url(/media/MusicTranscription/03_LuisJara.jpg), skyblue; }
-
-/* Section three */
-.session-musician .card.one { background: url(/media/SessionMusician/01.jpg), skyblue; }
-.session-musician .card.two { background: url(/media/SessionMusician/02.jpg), skyblue; }
-.session-musician .card.three { background: url(/media/SessionMusician/03.jpg), skyblue; }
-.session-musician .card.four { background: url(/media/SessionMusician/04.jpg), skyblue; }
-.session-musician .card.five { background: url(/media/SessionMusician/05.jpg), skyblue; }
-.session-musician .card.six { background: url(/media/SessionMusician/06.jpg), skyblue; }
-
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}

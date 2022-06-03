@@ -35,23 +35,58 @@ observer.observe(video);
  al video. Además vuelve el video al tiempo 0 cuando se saca el mouse. También le pondrá play siempre y cuando la opacidad del
  elemento sea de 1 (o sea que ya ocurrió el efecto de opacidad hecho en css)
  */
-const autoplay = document.querySelectorAll('.container');
-let out = true;
-for(let i = 0; i<autoplay.length; i++){
-    autoplay[i].addEventListener('mouseenter', 
-    function(e){
+ const card = document.querySelectorAll('.card');
+
+ for(let i = 0; i<card.length; i++){
+     card[i].addEventListener('mouseenter', 
+     function(e){
+        
+        card[i].setAttribute('mouse-still-inside', 'true');
         setTimeout(function() {
-            if ($(autoplay[i]).css('opacity') == 1){
-                autoplay[i].firstElementChild.play();
+            
+            if (card[i].getAttribute('mouse-still-inside') == 'true'){
+                card[i].setAttribute("style", "overflow:visible"); // Que la carta pueda mostrar el texto debajo
+                card[i].classList.add('transition'); // Animaciones de transición CSS
+                card[i].classList.add('onTop');
+
+                card[i].children[0].setAttribute("style", "border-radius: 5px;");
+                card[i].children[0].setAttribute("style", "border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;");
+                card[i].children[1].setAttribute("style", "border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;");
+                card[i].children[2].setAttribute("style", "top:100%");
+
+                setTimeout(function() {
+                    if (card[i].getAttribute('mouse-still-inside') == 'true'){
+                        card[i].children[0].play(); // Video play
+                    }
+                },350);
+                
+                card[i].setAttribute('delay-completed', 'true');
             }
-        }, 600);
-    })
-    autoplay[i].addEventListener('mouseleave', 
-    function(e){
-        autoplay[i].firstElementChild.pause();
-        autoplay[i].firstElementChild.currentTime = 0;
-    })
-}
+            
+        }, 400);
+     })
+ 
+     card[i].addEventListener('mouseleave', 
+     function(e){
+         
+         card[i].setAttribute('mouse-still-inside', 'false');
+         if (card[i].getAttribute('delay-completed') == 'true') {
+
+             card[i].classList.remove('transition');   
+             card[i].children[0].setAttribute("style", "border-radius: 5px;");
+             card[i].children[1].setAttribute("style", "border-radius: 5px;");
+             
+             card[i].firstElementChild.pause();
+             setTimeout(function() {
+                     card[i].firstElementChild.currentTime = 0;
+                     card[i].children[2].setAttribute("style", "top:0px");
+                     card[i].classList.remove('onTop');
+             }, 300);
+ 
+             card[i].setAttribute('delay-completed', 'false');
+         }
+     })
+ }
 
 // Lazy loading para cargar las imágenes y videos con un retardo. LINK: https://css-tricks.com/a-few-functional-uses-for-intersection-observer-to-know-when-an-element-is-in-view/
 
