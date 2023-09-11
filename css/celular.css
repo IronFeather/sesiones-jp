@@ -5,15 +5,55 @@
     }
 
     .celular {
-        width: auto;
+        width: 100vw;
         height: 100vh;
         display: block;
-        background-image: url(/media/In_construction.png);
-        background: url("/media/In_construction.png") no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    }
+
+    .imagen-mobile {
+        display: block;
+        background-color: red;
+        width: 100%;
+        height: 120vw;
+        background: url("/media/mobile.jpeg") no-repeat top fixed; 
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
+    .button-wrapper {
+        display:block;
+        margin-top: 60px;
+        height:100px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    /* Botón */
+    .button-contact-mobile {
+        height: 100%;
+        width: 100%;
+        background-color:#3165FF;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:30px;
+        font-weight:bold;
+        text-align: center;
+        text-decoration:none;
+        border-radius: 10px;
+        padding: 20px
+    }
+    .button-contact-mobile:hover {
+        background-color:#0040ff;
+    }
+    .button-contact-mobile:active {
+        top:1px;
     }
 }
 
