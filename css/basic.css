@@ -17,4 +17,8 @@ figure img, video {
     vertical-align: top;
 }
 
+.celular {
+    display: none
+}
+
 
